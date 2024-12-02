@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+
+
+<title>Animation</title>
+</head>
+<style>
+@keyframes ani1
+{
+from{margin-left:1000px;}
+to{margin-left:-6800px;}
+
+}
+
+
+@keyframes ani2
+{
+10%{color:red;}
+40%{color:green;background:yello;}
+60%{color:yellow;background:red;}
+90%{color:magenta;background:black}
+}
+
+
+#news
+{
+background:black;
+color:white;
+font-size:50px;
+width:8000px;
+box-shadow:10px 10px 10px gray;
+padding:10px;
+text-transform:uppercase;
+font-family:Arial black;
+margin-left:10px;
+animation:ani2 16s infinite linear;
+overflow:hidden;
+}
+#text
+{
+margin-left:10px;
+animation:ani1 40s infinite linear;
+}
+
+</style>
+
+<body>
+<h1 style="text-align:center">keyframes Animation</h1>
+<h2>Scrolling Text</h2>
+<div id="news">
+<span id="text">
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+</span>
+</div>
+
+</body>
+</html>
