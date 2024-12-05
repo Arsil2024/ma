@@ -4,6 +4,7 @@
 <head>
 <title>Layout</title>
 </head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
 <style>
 div,header,nav,sitemap,copyright,aside,artical
 {
@@ -23,7 +24,14 @@ header
 {
 margin:auto;
 width:95%;
-height:400px;
+height:500px;
+margin-bottom:10px;
+}
+
+header img
+{
+width:100%;
+height:500px;
 }
 
 nav
@@ -32,6 +40,14 @@ margin:auto;
 width:70%;
 height:40px;
 }
+
+nav ol li
+{
+list-style:none;
+display:inline;
+}
+
+
 
 #main
 {
@@ -51,22 +67,30 @@ justify-content:space-arround;
 #left
 {
 width:10%;
-height:200px;
 }
-
+#left img
+{
+width:100%;
+}
 
 artical
 {
 width:78%;
-height:200px;
+padding:70px;
+text-align:justify;
 }
 
 aside
 {
 width:10%;
-height:200px;
 }
 
+aside img
+{
+width:100%;
+box-shadow:4px 4px 4px gray;
+margin:2px;
+}
 
 footer
 {
@@ -83,7 +107,7 @@ width:10%;
 height:100px;
 }
 
-#sitemap
+#sitemap 
 {
 width:60%;
 height:100px;
@@ -96,20 +120,137 @@ width:20%;
 height:100px;
 }
 
+img{max-width:600px}
+
+/*Extra small device (phone,600px and down) /*
+
+@media only screen and(max-width:600px)
+{
+body{background:green;}
+header img{height:100%;}
+
+nav
+{
+background:yellow;
+height:400px;
+}
+
+nav ol li
+{
+list-style:none;
+background:red;
+display:block;
+margin:20px;
+}
+
+nav ol li:hover
+{
+background:lime;
+}
+
+
+/*Small device(portrait tablets and phones,660px and up)*/
+
+*media only screen(min-width:600px)
+
+body{background:yellow;}
+header{height:300px;display:block}
+header img{height:100%;}
+nav
+{
+//background:yellow;
+width:100%;
+text-align:left;
+margin-left-40px;
+}
+nav ol li
+{
+//background:red;
+padding:2px;
+margin-left:-10px;
+}
+
+}
+/*Medium device(landscape tablets,768px and up)*/
+
+@media only screen and(min-width:768px)
+{
+body{background:cyan;}
+header{height:400px;display:block}
+header img{height:100%;}
+
+}
+
+/*Large device(laptop/desktop,992px and up)/*
+@Media only screen and(min-width:992px)
+{
+body{background:orange;}
+header{height:500px;display:block}
+header img{height:100%;}
+nav
+{
+text-align:center;
+}
+
+
 </style>
 
 
 <body>
-<header>header</header>
+<header>
 
-<nav>Menu</nav>
+<img src="Images/eh.jpg">
+</header>
+
+<nav>
+<ol>
+<li><a href="index.html">Home</a></li>
+<li><a href="photogallery.html">Photogallery</a></li>
+<li><a href="list.html">List</a></li>
+<li><a href="web.html">Paragraph Practice</a></li>
+<li><a href="https://www.google.co.in/">Google Search</a></li>
+<li><a href="Div1.html">Cards</a></li>
+</ol>
+</nav>
 
 <div id="main">
-<div id="left">left</div>
+<div id="left">
+<img src="Images/A1.jpg">
+<img src="Images/A2.jpg">
+<img src="Images/A3.jpg">
+<img src="Images/A4.jpg">
+<img src="Images/A5.jpg">
+</div>
 
-<artical>Artical</artical>
+<artical>
 
-<aside>Aside</aside>
+<h2>Our Vision</h2>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<p>
+</p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+
+
+
+
+</artical>
+
+<aside>
+<h3>Sale on flipcart</h3>
+<img src="Images/m10.png">
+<img src="Images/m7.png">
+<img src="images/m6.png">
+<img src="images/m8.png">
+
+</aside>
 
 </div>
 
