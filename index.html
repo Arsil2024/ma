@@ -5,26 +5,33 @@
 </head>
 <style>
 body{
-background:#28282B;
+background:pink;
+width:100%;
+height:100%;
+ background-size: 50%;
+}
 
-
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) 
+{
+body {background:pink;}
+}
 
 #navbar ol  li
 {
 list-style:none;
-display:inline;
-margin-left:10px;
-margin-top:px;
 background:#0aa5fe;
 font-family:product sans;
-font-size:18px;
+font-size:25px;
 cursor:pointer;
-padding:2px;
+padding:0px;
+width:200px;
 border-radius:10px;
-box-shadow:10px 10px 10px;
+box-shadow:10px 10px px;
+text-align:center;
+margin-top:50px;
+margin-left:100px;
 }
-
 
 #navbar a:link{
 text-decoration:none;
@@ -38,9 +45,8 @@ box-shadow:10px  #0aa5fe;
 
 .img
 {
-width:1800px;
-margin-left:400px;
-margin-top:-450px;
+width:4px;
+margin-left:200px;
 
 }
 
@@ -48,10 +54,9 @@ margin-top:-450px;
 #a
 {
 color:white;
-font-size:40px;
-margin-top:-550px;
-margin-left:80px;
-width:250px;
+font-size:20px;
+margin-left:40px;
+
 font-family:product sans;
 
 
@@ -60,11 +65,114 @@ font-family:product sans;
 #b
 {
 color:white;
-margin-left:80px;
+margin-left:40px;
+font-size:50px;
+margin-top:-20px;
+font-family:product sans;
+
+
+}
+
+#c
+{
+color:white;
+font-size:30px;
+margin-left:40px;
+margin-top:-20px;
+font-family:product sans;
+
+
+}
+
+#d
+{
+color:#0aa5fe;
+font-size:30px;
+font-family:product sans;
+margin-left:180px;
+margin-top:-60px;
+width:200px;
+box-shadow:5px 5px  #0aa5fe;
+
+}
+
+.bstyle
+{
+color:white;
+background:#0aa5fe;
+width:100px;
+height:30px;
+margin-left:190px;
+font-size:15px;
+font-family:product sans;
+cursor: pointer;
+margin-top:50px;
+border-radius:10px ;
+box-shadow:2px 2px 2px;
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    body{background:pink;}
+
+#navbar ol  li
+{
+list-style:none;
+display:inline;
+background:#0aa5fe;
+font-family:product sans;
+font-size:20px;
+cursor:pointer;
+padding:3px;
+border-radius:10px;
+box-shadow:10px 10px px;
+text-align:center;
+margin-left:60px
+}
+
+#navbar a:link{
+text-decoration:none;
+color:white;
+box-shadow:10px  #0aa5fe;
+}
+#navbar a:visited{color:white;}
+#navbar a:hover{color:yellow;}
+#navbar a:active{color:blue;}
+
+
+.img
+{
+width:1000px;
+margin-left:150px;
+margin-top:-100px;
+
+}
+
+
+#a
+{
+color:white;
+font-size:30px;
+margin-top:-400px;
+margin-left:20px;
+
+font-family:product sans;
+
+
+}
+
+#b
+{
+color:white;
+margin-left:20px;
 font-size:70px;
 margin-top:-20px;
 font-family:product sans;
-width:350px;
+
 
 }
 
@@ -72,8 +180,8 @@ width:350px;
 {
 color:white;
 font-size:40px;
-margin-left:80px;
-margin-top:-30px;
+margin-left:20px;
+margin-top:-20px;
 font-family:product sans;
 
 
@@ -84,10 +192,10 @@ font-family:product sans;
 color:#0aa5fe;
 font-size:40px;
 font-family:product sans;
-margin-left:250px;
+margin-left:200px;
 margin-top:-80px;
 width:300px;
-box-shadow:10px 10px  #0aa5fe;
+box-shadow:5px 5px  #0aa5fe;
 
 }
 
@@ -95,33 +203,125 @@ box-shadow:10px 10px  #0aa5fe;
 {
 color:white;
 background:#0aa5fe;
-width:150px;
-height:50px;
-margin-left:700px;
+width:120px;
+height:40px;
+margin-left:190px;
 font-size:20px;
 font-family:product sans;
 cursor: pointer;
-margin-top:130px;
+margin-top:100px;
 border-radius:10px ;
 box-shadow:2px 2px 2px;
 }
 
-.btstyle
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{background:pink;}
+
+    #navbar ol  li
 {
-height:50px;
-width:150px;
+list-style:none;
+display:inline;
+background:#0aa5fe;
+font-family:product sans;
 font-size:20px;
-margin-left:400px;
-margin-top-30px;
+cursor:pointer;
+padding:3px;
+border-radius:10px;
+box-shadow:10px 10px px;
+text-align:center;
+margin-left:60px
+}
+
+#navbar a:link{
+text-decoration:none;
+color:white;
+box-shadow:10px  #0aa5fe;
+}
+#navbar a:visited{color:white;}
+#navbar a:hover{color:yellow;}
+#navbar a:active{color:blue;}
+
+
+.img
+{
+width:1600px;
+margin-left:230px;
+margin-top:-280px;
 
 }
+
+
+#a
+{
+color:white;
+font-size:40px;
+margin-top:-700px;
+margin-left:20px;
+
+font-family:product sans;
+
+
+}
+
+#b
+{
+color:white;
+margin-left:20px;
+font-size:80px;
+margin-top:-20px;
+font-family:product sans;
+
+
+}
+
+#c
+{
+color:white;
+font-size:50px;
+margin-left:20px;
+margin-top:-20px;
+font-family:product sans;
+
+
+}
+
+#d
+{
+color:#0aa5fe;
+font-size:50px;
+font-family:product sans;
+margin-left:250px;
+margin-top:-100px;
+width:350px;
+box-shadow:5px 5px  #0aa5fe;
+
+}
+
+.bstyle
+{
+color:white;
+background:#0aa5fe;
+width:120px;
+height:40px;
+margin-left:550px;
+font-size:20px;
+font-family:product sans;
+cursor: pointer;
+margin-top:200px;
+border-radius:10px ;
+box-shadow:2px 2px 2px;
+}
+
 
 </style>
 
 
 
 <body>
-<div id="navbar">
+    <div id="navbar">
 <ol>
 <li><a href="My profile.html">Practice Pages</a></li>
 <li><a href="issro.html">A.O.T.M</a></li>
@@ -139,12 +339,5 @@ margin-top-30px;
 
 <div><a href="https://www.behance.net/mohdarsil143"><button class="bstyle">My Work</button></a>
 </div>
-
-
-
-<footer>
-</footer>
-
 </body>
-
 </html>
