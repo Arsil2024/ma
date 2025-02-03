@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mes
+    {
+        background:green;
+        height:100px;
+        color:white;
+        font-size:40px;
+        font-family:Arial black;
+        padding:30px;
+        text-align:center;
+        box-shadow:10px 10px 10px gray;
+        margin-top:10px;
+        padding-top:5px;
+
+    }
+</style>
+<body>
+    <div id="mes">
+        News
+    </div>
+    <script>
+        var news = ["Will rename Talkatora to Valmiki stadium if BJP comes to power: Parvesh Verma","Delhi election 2025 LIVE: Distributing spy cams to prevent BJP's malpractice, says Kejriwal","Is it Aamir Khan walking on the streets of Mumbai dressed as a caveman? Here's what we know","Prabhas rises as ‘divine guardian’ Rudra in first look poster from Vishnu Manchu's Kannappa","Abhishek Sharma's whirlwind 135 rated above Virat Kohli's 82-run epic against Pakistan: 'If anyone's played better"]
+
+
+        
+
+        var n = document.getElementById("mes")
+
+        var c = -1
+
+        function shownews()
+        {
+
+
+            
+
+
+if(c>news.lenth-2)
+     {
+        c=0
+        }
+        else
+        {
+            c++
+        }
+        n.innerHTML = news[c]
+        document.title = c
+        setTimeout("shownews()",1500)
+    }
+
+    shownews()
+    </script>
+
+    
+</body>
+</html>
